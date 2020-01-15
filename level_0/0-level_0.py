@@ -14,5 +14,7 @@ for items in range(1024):
     if r.status_code != 200:
         print(f'Failed to post request number {items}!')
         failed += 1
+    else:
+        print(f'Succesfully voted {items} times!')
 
 print(f'Failed {fails} number of requests')
